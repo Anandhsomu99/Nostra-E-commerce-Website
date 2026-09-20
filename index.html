@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!--Offer banner-->
+
+    <div class="offer-banner" id="offerbanner">
+        <p>Sign Up and <strong>Get 20% OFF </strong>for your first Order</p>
+        <span id="closebanner" onclick="closeofferbanner()">&times;</span>
+    </div>
+
+    <nav class="navbar">
+        <div>
+            <h1 class="logo">Nostra</h1>
+        </div>
+        <ul class="nav-link">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="#new-arrival-section">New Arrival</a></li>
+            <li class="link"><a href="index.html#most-wanted-section">Most Wanted</a></li>
+            <li class="link"><a href="collections.html">Collections</a></li>
+            <li class="link"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menuicon" onclick="opennavbar()" style="color: rgb(2, 6, 14);"></i>
+    </nav>
+
+    <!-- side nav -->
+     <section class="sidenav" id="sidenav">
+        <span class="close-btn" id="closenav" onclick="closenavbar()">&times;</span>
+        <ul>
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="index.html#new-arrival-section">New Arrival</a></li>
+            <li class="link"><a href="index.html#most-wanted-section">Most Wanted</a></li>
+            <li class="link"><a href="collections.html">Collections</a></li>
+            <li class="link"><a href="contact.html">Contact Us</a></li>
+        </ul>
+     </section>
+
+    <div class="container1">
+        <span class="nav-arrow prev-arrow" onclick="moveSlide(-1)"><i class="fa-solid fa-angle-left"
+                style="color: rgb(250, 251, 252);"></i></span>
+        <div class="container">
+
+            <img src="/images/img1.jpg" alt="Home-img" class="slide active">
+            <img src="/images/img2.jpg" alt="Home-img" class="slide">
+            <img src="/images/img3.jpg" alt="Home-img" class="slide">
+
+        </div>
+        <div class="heading">
+            <h1>Level up your style with our</h1>
+            <p>Summer Collections</p>
+            <button class="btn">Shop Now &rarr;</button>
+        </div>
+        <span class="nav-arrow next-arrow" onclick="moveSlide(1)"><i class="fa-solid fa-angle-right"
+                style="color: rgb(241, 243, 249);"></i></span>
+    </div>
+    <section class="brand-section">
+        <h2>Brands</h2>
+        <div class="brand-container">
+            <div class="brand-item">
+                <img src="/images/logo/puma.jpg" alt="Puma">
+                <p>Puma</p>
+            </div>
+
+            <div class="brand-item">
+                <img src="/images/logo/Simple.jpg" alt="Puma">
+                <p>Simple</p>
+            </div>
+
+            <div class="brand-item">
+                <img src="/images/logo/Twitch.jpg" alt="Puma">
+                <p>Twitch</p>
+            </div>
+
+            <div class="brand-item">
+                <img src="/images/logo/leaves.jpg" alt="Puma">
+                <p>Leaves</p>
+            </div>
+
+            <div class="brand-item">
+                <img src="/images/logo/Behance.jpg" alt="Puma">
+                <p>Behance</p>
+            </div>
+
+            <div class="brand-item">
+                <img src="/images/logo/Arrow.jpg" alt="Puma">
+                <p>Arrow</p>
+            </div>
+
+            <div class="brand-item">
+                <img src="/images/logo/adidas.jpg" alt="Puma">
+                <p>Addidas</p>
+            </div>
+
+        </div>
+    </section>
+    <div class="review">
+        <h1>We Provide Best</h1>
+        <h1>Customer Experience</h1>
+        <div class="main-container">
+            <div class="review-container">
+                <i class="fa-regular fa-circle-check" style="color: rgb(2, 6, 14);"></i>
+                <h3>Original Products</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat esse veritatis iusto quasi
+                    consectetur provident a. Dicta ut ab rerum adipisci beatae quisquam vero saepe aliquam, iusto,
+                    reprehenderit officia ducimus.</p>
+            </div>
+            <div class="review-container">
+                <i class="fa-regular fa-face-smile-beam" style="color: rgb(2, 6, 14);"></i>
+                <h3>Satisfaction Guarantee</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat esse veritatis iusto quasi
+                    consectetur provident a. Dicta ut ab rerum adipisci beatae quisquam vero saepe aliquam, iusto,
+                    reprehenderit officia ducimus.</p>
+            </div>
+            <div class="review-container">
+                <i class="fa-solid fa-broom" style="color: rgb(2, 6, 14);"></i>
+                <h3>New Arrival Everyday</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat esse veritatis iusto quasi
+                    consectetur provident a. Dicta ut ab rerum adipisci beatae quisquam vero saepe aliquam, iusto,
+                    reprehenderit officia ducimus.</p>
+            </div>
+            <div class="review-container">
+                <i class="fa-solid fa-truck-fast" style="color: rgb(2, 6, 14);"></i>
+                <h3>Fast & Free Shipping</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat esse veritatis iusto quasi
+                    consectetur provident a. Dicta ut ab rerum adipisci beatae quisquam vero saepe aliquam, iusto,
+                    reprehenderit officia ducimus.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="new-arrival" id="new-arrival-section">
+        <h1>New Arrivals</h1>
+        <div class="arrival-container">
+            <div class="arrival-card">
+                <img src="/images/Shirts/images.jpg" alt="Shirts">
+                <button class="shop-now-btn">Shop Now &rarr;</button>
+            </div>
+            <div class="arrival-card">
+                <img src="/images/Shirts/images (1).jpg" alt="Shirts">
+                <button class="shop-now-btn">Shop Now &rarr;</button>
+            </div>
+            <div class="arrival-card">
+                <img src="/images/Shirts/Phants.jpg" alt="Shirts">
+                <button class="shop-now-btn">Shop Now &rarr;</button>
+            </div>
+            <div class="arrival-card">
+                <img src="/images/Shirts/Tshirts.jpg" alt="Shirts">
+                <button class="shop-now-btn">Shop Now &rarr;</button>
+            </div>
+        </div>
+
+    <div class="most-wanted-section" id="most-wanted-section">
+        <h2>Most Wanted</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <span class="sale-badge">sale</span>
+                <img src="/images/most wanted/image1.jpg" alt="Product">
+                <Button class="wishlist-btn" onclick="toggleHeart(this)">♡</Button>
+            </div>
+            <div class="product-card">
+                <span class="sale-badge">sale</span>
+                <img src="/images/most wanted/images (1).jpg" alt="Product">
+                <Button class="wishlist-btn" onclick="toggleHeart(this)">♡</Button>
+            </div>
+            <div class="product-card">
+                <span class="sale-badge">sale</span>
+                <img src="/images/most wanted/images (2).jpg" alt="Product">
+                <Button class="wishlist-btn" onclick="toggleHeart(this)">♡</Button>
+            </div>
+            <div class="product-card">
+                <span class="sale-badge">sale</span>
+                <img src="/images/most wanted/images (3).jpg" alt="Product">
+                <Button class="wishlist-btn" onclick="toggleHeart(this)">♡</Button>
+            </div>
+            <div class="product-card">
+                <span class="sale-badge">sale</span>
+                <img src="/images/most wanted/images (4).jpg" alt="Product">
+                <Button class="wishlist-btn" onclick="toggleHeart(this)">♡</Button>
+            </div>
+            <div class="product-card">
+                <span class="sale-badge">sale</span>
+                <img src="/images/most wanted/images (5).jpg" alt="Product">
+                <Button class="wishlist-btn" onclick="toggleHeart(this)">♡</Button>
+            </div>
+            <div class="product-card">
+                <span class="sale-badge">sale</span>
+                <img src="/images/most wanted/images (6).jpg" alt="Product">
+                <Button class="wishlist-btn" onclick="toggleHeart(this)">♡</Button>
+            </div>
+            <div class="product-card">
+                <span class="sale-badge">sale</span>
+                <img src="/images/most wanted/images (7).jpg" alt="Product">
+                <Button class="wishlist-btn" onclick="toggleHeart(this)">♡</Button>
+            </div>
+            <div class="product-card">
+                <span class="sale-badge">sale</span>
+                <img src="/images/most wanted/images (8).jpg" alt="Product">
+                <Button class="wishlist-btn" onclick="toggleHeart(this)">♡</Button>
+            </div>
+            <div class="product-card">
+                <span class="sale-badge">sale</span>
+                <img src="/images/most wanted/images.jpg" alt="Product">
+                <Button class="wishlist-btn" onclick="toggleHeart(this)">♡</Button>
+            </div>
+            <div class="product-card">
+                <span class="sale-badge">sale</span>
+                <img src="/images/most wanted/images (4).jpg" alt="Product">
+                <Button class="wishlist-btn" onclick="toggleHeart(this)">♡</Button>
+            </div>
+            <div class="product-card">
+                <span class="sale-badge">sale</span>
+                <img src="/images/most wanted/images (6).jpg" alt="Product">
+                <Button class="wishlist-btn" onclick="toggleHeart(this)">♡</Button>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <div class="signup">
+        <h1>Join Our News Letter</h1>
+        <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input class="input">
+        <button>Subscribe &rarr;</button>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <h1>Nostra</h1>
+            <p class="end-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eum exercitationem labore nam at quaerat, nemo neque blanditiis accusantium vel ad qui impedit culpa consequatur! Asperiores dolorem nulla quisquam ullam?</p>
+        </div>
+        <div class="socialmedia">
+                <i class="fa-brands fa-instagram" style="color: rgb(2, 6, 14);"></i>
+                <i class="fa-brands fa-twitter" style="color: rgb(2, 6, 14);"></i>
+                <i class="fa-brands fa-facebook" style="color: rgb(2, 6, 14);"></i>
+        
+            
+        </div>
+        <div>
+            <p>@ 2023 Nostra.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

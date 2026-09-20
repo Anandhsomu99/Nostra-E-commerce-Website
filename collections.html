@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="collections.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div>
+            <h1 class="logo">Nostra</h1>
+        </div>
+        <ul class="nav-link">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="#new-arrival-section">New Arrival</a></li>
+            <li class="link"><a href="index.html#most-wanted-section">Most Wanted</a></li>
+            <li class="link"><a href="collections.html">Collections</a></li>
+            <li class="link"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menuicon" onclick="opennavbar()" style="color: rgb(2, 6, 14);"></i>
+    </nav>
+
+    <!-- side nav -->
+     <section class="sidenav" id="sidenav">
+        <span class="close-btn" id="closenav" onclick="closenavbar()">&times;</span>
+        <ul>
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="index.html#new-arrival-section">New Arrival</a></li>
+            <li class="link"><a href="index.html#most-wanted-section">Most Wanted</a></li>
+            <li class="link"><a href="collections.html">Collections</a></li>
+            <li class="link"><a href="contact.html">Contact Us</a></li>
+        </ul>
+     </section>
+
+ <!-- Main Container -->
+    <div class="container">
+
+        <aside>
+
+            <h2>Occasion</h2>
+
+            <label>
+                <input type="checkbox" class="filter" value="summer" data-type="occasion">
+                Summer
+            </label>
+
+            <label>
+                <input type="checkbox" class="filter" value="party" data-type="occasion">
+                Party
+            </label>
+
+            <label>
+                <input type="checkbox" class="filter" value="beach" data-type="occasion">
+                Beach
+            </label>
+
+
+            <h2>Colors</h2>
+
+            <label>
+                <input type="checkbox" class="filter" value="red" data-type="color">
+                Red
+            </label>
+
+            <label>
+                <input type="checkbox" class="filter" value="blue" data-type="color">
+                Blue
+            </label>
+
+            <label>
+                <input type="checkbox" class="filter" value="white" data-type="color">
+                White
+            </label>
+
+            <label>
+                <input type="checkbox" class="filter" value="green" data-type="color">
+                Green
+            </label>
+
+        </aside>
+
+        <main>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search">
+
+                <span>🔍</span>
+
+            </div>
+
+            <div class="products" id="products">
+
+
+                
+                <div class="product"
+                    data-name="Floral Summer Shirt"
+                    data-occasion="summer beach"
+                    data-color="blue">
+
+                    <img src="/images/collections/images 2.jpg">
+
+                    <h3>Floral Summer Shirt</h3>
+
+                    <p>₹220</p>
+
+                </div>
+
+
+               
+                <div class="product"
+                    data-name="Summer Green"
+                    data-occasion="summer beach"
+                    data-color="green">
+
+                    <img src="/images/collections/images 1.jpg">
+
+                    <h3>Summer Green</h3>
+
+                    <p>₹260</p>
+
+                </div>
+
+
+             
+                <div class="product"
+                    data-name="Party Floral Shirt"
+                    data-occasion="party"
+                    data-color="red">
+
+                    <img src="/images/collections/images 3.jpg">
+
+                    <h3>Party Floral Shirt</h3>
+
+                    <p>₹399</p>
+
+                </div>
+
+
+             
+                <div class="product"
+                    data-name="Beach White Shirt"
+                    data-occasion="beach"
+                    data-color="white">
+
+                    <img src="/images/collections/images 4.jpg">
+
+                    <h3>Beach White Shirt</h3>
+
+                    <p>₹299</p>
+
+                </div>
+
+
+                <div class="product"
+                    data-name="Blue Party Shirt"
+                    data-occasion="party"
+                    data-color="blue">
+
+                    <img src="/images/collections/images 5.jpg">
+
+                    <h3>Blue Party Shirt</h3>
+
+                    <p>₹349</p>
+
+                </div>
+
+
+                <div class="product"
+                    data-name="Green Beach Shirt"
+                    data-occasion="beach summer"
+                    data-color="green">
+
+                    <img src="/images/collections/images 6.jpg">
+
+                    <h3>Green Beach Shirt</h3>
+
+                    <p>₹320</p>
+
+                </div>
+                
+
+            </div>
+
+        </main>
+
+    </div>
+     
+
+
+<footer class="footer">
+        <div class="footer-container">
+            <h1>Nostra</h1>
+            <p class="end-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eum exercitationem labore nam at quaerat, nemo neque blanditiis accusantium vel ad qui impedit culpa consequatur! Asperiores dolorem nulla quisquam ullam?</p>
+        </div>
+        <div class="socialmedia">
+                <i class="fa-brands fa-instagram" style="color: rgb(2, 6, 14);"></i>
+                <i class="fa-brands fa-twitter" style="color: rgb(2, 6, 14);"></i>
+                <i class="fa-brands fa-facebook" style="color: rgb(2, 6, 14);"></i>
+        
+            
+        </div>
+        <div>
+            <p>@ 2023 Nostra.com</p>
+        </div>
+    </footer>
+
+    <script src="collection.js"></script>
+
+</body>
